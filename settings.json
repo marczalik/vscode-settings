@@ -1,0 +1,45 @@
+{
+    // color theme
+    "workbench.colorTheme": "Atom One Dark",
+    // editor
+    "editor.lineNumbers": "relative",
+    "editor.acceptSuggestionOnEnter": "off",
+    // fonts
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Inconsolata, Consolas, 'Courier New', monospace",
+    "editor.renderWhitespace": "boundary",
+    // files
+    "files.exclude":{
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/tmp": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true
+    },
+    // terminal
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#ABB2BF",
+        "terminal.background": "#1E2127",
+        "terminal.selectionBackground": "#b5b9c03b",
+        "terminalCursor.background": "#5C6370"
+    },
+    // telemetry
+    "telemetry.enableTelemetry": false,
+    // python
+    "python.linting.pylintEnabled": false,
+    //"python.pythonPath": "",
+    // window
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons",
+    // vim
+    "vim.startInInsertMode": true,
+    "vim.useCtrlKeys": false,
+    "vim.overrideCopy": false,
+    "vim.useSystemClipboard": true,
+    "vim.leader": " ",
+    "vim.easymotion": true,
+    "vim.easymotionMarkerYOffset": 4,
+}
