@@ -4,10 +4,15 @@
     // editor
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [72, 80],
+    "editor.snippetSuggestions": "top",
+    // "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 79,
+    "editor.wrappingIndent": "indent",
     // fonts
     "editor.fontSize": 14,
     "editor.fontFamily": "Inconsolata, Consolas, 'Courier New', monospace",
-    "editor.renderWhitespace": "boundary",
     // files
     "files.exclude":{
         "**/.git": true,
@@ -19,6 +24,7 @@
         "**/*.pyc": true,
         "**/__pycache__": true
     },
+    "files.autoSave": "onWindowChange",
     // terminal
     "workbench.colorCustomizations": {
         "terminal.foreground": "#ABB2BF",
@@ -29,11 +35,20 @@
     // telemetry
     "telemetry.enableTelemetry": false,
     // python
-    "python.linting.pylintEnabled": false,
-    //"python.pythonPath": "",
+    "python.linting.pylintEnabled": true,
+        // Tensorflow
+    // "python.pythonPath": "C:\\Users\\Marc\\Documents\\Projects\\TensorFlow\\envs\\tensorflow\\Scripts\\python.exe",
+        // Scikit
+    "python.pythonPath": "C:\\Users\\Marc\\Documents\\Projects\\Scikit\\envs\\scikit\\Scripts\\python.exe",
+        // Braintree
+    // "python.pythonPath": "C:\\Users\\Marc\\Documents\\Projects\\Braintree\\envs\\Braintree\\Scripts\\python.exe",
+    // emmet
+    "emmet.excludeLanguages": [],
+    "emmet.triggerExpansionOnTab": true,
     // window
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.editor": "json",
+    "window.titleBarStyle": "custom",
     // vim
     "vim.startInInsertMode": true,
     "vim.useCtrlKeys": false,
@@ -42,4 +57,10 @@
     "vim.leader": " ",
     "vim.easymotion": true,
     "vim.easymotionMarkerYOffset": 4,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "python.linting.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "sync.gist": ""
 }
