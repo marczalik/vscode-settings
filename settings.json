@@ -1,15 +1,28 @@
 {
     // color theme
     "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
     // editor
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        72,
+        80
+    ],
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.renameOnType": true,
+    "editor.formatOnSave": true,
+    // "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 79,
+    "editor.wrappingIndent": "indent",
     // fonts
     "editor.fontSize": 14,
     "editor.fontFamily": "Inconsolata, Consolas, 'Courier New', monospace",
-    "editor.renderWhitespace": "boundary",
     // files
-    "files.exclude":{
+    "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
@@ -19,6 +32,7 @@
         "**/*.pyc": true,
         "**/__pycache__": true
     },
+    "files.autoSave": "onWindowChange",
     // terminal
     "workbench.colorCustomizations": {
         "terminal.foreground": "#ABB2BF",
@@ -29,17 +43,27 @@
     // telemetry
     "telemetry.enableTelemetry": false,
     // python
-    "python.linting.pylintEnabled": false,
-    //"python.pythonPath": "",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.jediEnabled": false,
+    "python.languageServer": "Microsoft",
+    // Python 
+    // "python.pythonPath": 
+    // emmet
+    "emmet.excludeLanguages": [],
+    "emmet.triggerExpansionOnTab": true,
     // window
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.editor": "json",
+    "window.titleBarStyle": "custom",
     // vim
-    "vim.startInInsertMode": true,
+    "vim.startInInsertMode": false,
     "vim.useCtrlKeys": false,
     "vim.overrideCopy": false,
     "vim.useSystemClipboard": true,
     "vim.leader": " ",
     "vim.easymotion": true,
     "vim.easymotionMarkerYOffset": 4,
+    // color highlight
+    "color-highlight.markerType": "dot-before",
 }
