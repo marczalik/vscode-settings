@@ -77,7 +77,7 @@
         "terminal.selectionBackground": "#b5b9c03b",
         "terminalCursor.background": "#5C6370"
     },
-    "terminal.integrated.shell.windows": "C:\\msys64\\usr\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": 
     "terminal.integrated.shellArgs.windows": [
         "-i"
     ],
