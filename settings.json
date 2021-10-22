@@ -1,5 +1,41 @@
 {
     // color theme
+    "editor.tokenColorCustomizations": {
+        "comments": "#ABB2BF",
+        "variables": "#FF0000",
+        "textMateRules": [
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#FF0000"
+                } 
+            },
+            {
+                "scope": "source.python variable.parameter",
+                "settings": {
+                    "foreground": "#FF0000",
+                }
+            },
+            {
+                "scope": "meta.function-call.python",
+                "settings": {
+                    "foreground": "#61AFEF",
+                }
+            },
+            {
+                "scope": "source.python",
+                "settings": {
+                    "foreground": "#E5C07B",
+                }
+            },
+            {
+                "scope": "constant.numeric",
+                "settings": {
+                    "foreground": "#98C379",
+                }
+            }
+        ]
+    },
     "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "vscode-icons",
     "workbench.preferredDarkColorTheme": "Atom One Dark",
@@ -8,15 +44,16 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [
-        72,
-        80
+        80,
+        110,
+        120
     ],
     "editor.snippetSuggestions": "top",
     "editor.suggestSelection": "first",
     "editor.renameOnType": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     // "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 79,
+    "editor.wordWrapColumn": 119,
     "editor.wrappingIndent": "indent",
     // fonts
     "editor.fontSize": 14,
@@ -40,14 +77,21 @@
         "terminal.selectionBackground": "#b5b9c03b",
         "terminalCursor.background": "#5C6370"
     },
+    "terminal.integrated.shell.windows": "C:\\msys64\\usr\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-i"
+    ],
+    "terminal.integrated.env.windows": {
+        "PATH": 
+    },
     // telemetry
     "telemetry.enableTelemetry": false,
     // python
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.jediEnabled": false,
-    "python.languageServer": "Microsoft",
-    // Python 
+    "python.languageServer": "Pylance",
+    // Python 3.7
     // "python.pythonPath": 
     // emmet
     "emmet.excludeLanguages": [],
@@ -58,12 +102,26 @@
     "window.titleBarStyle": "custom",
     // vim
     "vim.startInInsertMode": false,
-    "vim.useCtrlKeys": false,
+    "vim.useCtrlKeys": true,
     "vim.overrideCopy": false,
     "vim.useSystemClipboard": true,
     "vim.leader": " ",
     "vim.easymotion": true,
     "vim.easymotionMarkerYOffset": 4,
+    // live server
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     // color highlight
     "color-highlight.markerType": "dot-before",
+    // Unknown
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    // C/C++
+    "C_Cpp.updateChannel": "Insiders",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
 }
