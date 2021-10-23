@@ -32,5 +32,20 @@
     {
         "key": "alt+`",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // Move blocks of code up and down
+    {
+        "key": "shift+alt+j",
+        "command": "editor.action.moveLinesDownAction"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "editor.action.moveLinesUpAction"
+    },
+    // Hover for tooltip
+    {
+        "key": "shift+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
     }
 ]
