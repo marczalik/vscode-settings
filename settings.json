@@ -108,6 +108,16 @@
     "vim.leader": " ",
     "vim.easymotion": true,
     "vim.easymotionMarkerYOffset": 4,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        }
+    ],
     // live server
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
