@@ -1,7 +1,7 @@
 {
     // color theme
     "editor.tokenColorCustomizations": {
-        "comments": "#ABB2BF",
+        "comments": "#ffffff",
         "variables": "#FF0000",
         "textMateRules": [
             {
@@ -19,7 +19,13 @@
             {
                 "scope": "meta.function-call.python",
                 "settings": {
-                    "foreground": "#61AFEF",
+                    "foreground": "#008cff",
+                }
+            },
+            {
+                "scope": "meta.function-call.arguments.python",
+                "settings": {
+                    "foreground": "#20f0ff",
                 }
             },
             {
@@ -39,19 +45,30 @@
     "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "vscode-icons",
     "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#ABB2BF",
+        "terminal.background": "#1E2127",
+        "terminal.selectionBackground": "#b5b9c03b",
+        "terminalCursor.background": "#5C6370",
+        "editor.selectionBackground": "#ffe100a0",
+        "editor.background": "#080d14",
+        "tab.activeBackground": "#ff00005d",
+        "editorWhitespace.foreground": "#ffffff74",
+    },
     // editor
-    "editor.lineNumbers": "relative",
+    // "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [
-        80,
-        110,
-        120
+        72,
+        79,
+        100
     ],
     "editor.snippetSuggestions": "top",
     "editor.suggestSelection": "first",
     "editor.renameOnType": true,
     "editor.formatOnType": true,
+    "editor.detectIndentation": true,
     // "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 119,
     "editor.wrappingIndent": "indent",
@@ -71,34 +88,26 @@
     },
     "files.autoSave": "onWindowChange",
     // terminal
-    "workbench.colorCustomizations": {
-        "terminal.foreground": "#ABB2BF",
-        "terminal.background": "#1E2127",
-        "terminal.selectionBackground": "#b5b9c03b",
-        "terminalCursor.background": "#5C6370"
-    },
-    "terminal.integrated.shell.windows": 
-    "terminal.integrated.shellArgs.windows": [
-        "-i"
-    ],
-    "terminal.integrated.env.windows": {
-        "PATH": 
-    },
+
+    // "terminal.integrated.shell.windows": 
+    // "terminal.integrated.shellArgs.windows": [
+    //     "-i"
+    // ],
+    // "terminal.integrated.env.windows": {
+    //     "PATH": 
+    // },
     // telemetry
     "telemetry.enableTelemetry": false,
     // python
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": false,
     "python.linting.enabled": true,
-    "python.jediEnabled": false,
-    "python.languageServer": "Pylance",
-    // Python 3.7
-    // "python.pythonPath": 
-    // emmet
-    "emmet.excludeLanguages": [],
-    "emmet.triggerExpansionOnTab": true,
-    // window
-    "window.zoomLevel": 0,
-    "workbench.settings.editor": "json",
+    // "python.jediEnabled": false,
+    // "python.languageServer": "Pylance",
+    // "[python]": {"editor.defaultFormatter": "ms-python.black-formatter"},
+    // "python.formatting.provider": "black",
+    // "python.formatting.blackArgs": ["--line-length", "100", "--preview"],
+    // interpretter paths
+    // "workbench.settings.editor": "json",
     "window.titleBarStyle": "custom",
     // vim
     "vim.startInInsertMode": false,
@@ -108,6 +117,7 @@
     "vim.leader": " ",
     "vim.easymotion": true,
     "vim.easymotionMarkerYOffset": 4,
+    "vim.hlsearch": true,
     "vim.visualModeKeyBindings": [
         {
             "before": [">"],
@@ -134,4 +144,28 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "git.ignoreLegacyWarning": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    // Explorer
+    "explorer.autoReveal": false,
+    // neovim
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/vscode-nvim",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    // HTML
+    "html.autoClosingTags": false,
+    // Haskell
+    "haskell.trace.server": "messages",
+    "haskell.trace.client": "debug",
+    "haskell.manageHLS": "GHCup",
+    "svelte.ask-to-enable-ts-plugin": false,
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "switch:command",
+        "stash-push:command"
+    ],
+    // Diffing
+    "diffEditor.ignoreTrimWhitespace": false,
 }
